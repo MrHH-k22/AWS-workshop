@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 ---
 
-# Work with Amazon System Manager - Session Manager
+# Building a serverless web application
 
 ### Overall
 
