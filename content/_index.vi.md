@@ -11,7 +11,7 @@ chapter: false
 
 Trong bài lab này, bạn sẽ được học cách xây dựng một ứng dụng web serverless trên AWS một cách thực tế, tập trung vào việc thực hành với các dịch vụ AWS đa dạng. Bạn sẽ được học cách sử dụng các dịch vụ như Amazon Cognito - Xác thực và ủy quyền người dùng, Amazon S3 - lưu trữ website tĩnh, Amazon API Gateway - tạo và quản lý API, AWS Lambda - xử lý logic nghiệp vụ, Amazon DynamoDB - lưu trữ dữ liệu NoSQL. Mục tiêu workshop là giúp bạn nắm bắt cách tạo ứng dụng không cần quản lý server, chỉ tính phí theo sử dụng.
 
-![ConnectPrivate](/images/AWS.jpg)
+![ConnectPrivate](/images/AWS.png)
 
 ### Chi phí ước tính
 
