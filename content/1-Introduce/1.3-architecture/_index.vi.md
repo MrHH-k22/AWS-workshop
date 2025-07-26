@@ -21,7 +21,7 @@ Serverless không có nghĩa là không có server, mà là việc quản lý se
 
 ## Kiến trúc AWS
 
-![ConnectPrivate](/images/AWS.png)
+![ConnectPrivate](/images/workshop-architect.png)
 
 Ứng dụng của chúng ta sử dụng kiến trúc **3-tier serverless** gồm:
 
