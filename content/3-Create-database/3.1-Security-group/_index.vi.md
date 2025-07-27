@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-## Tạo một Database Mới
+## Tạo 1 Security Group mới
 
 1. Truy cập trang chủ **AWS Management Console** tại [https://aws.amazon.com/](https://aws.amazon.com/)
 

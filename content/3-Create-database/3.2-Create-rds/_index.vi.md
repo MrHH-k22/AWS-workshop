@@ -55,6 +55,7 @@ pre: " <b> 3.2. </b> "
 
    - **VPC**: Chọn **VPC mặc định**
    - **Security group**: Chọn **Security group đã tạo ở bước trước**
+   - **Public access**: Chọn **Yes**
    - Các mục còn lại: Để mặc định
 
 ![alt text](image-5.png)
