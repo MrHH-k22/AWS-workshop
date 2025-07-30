@@ -1,21 +1,40 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Connect to MySQL Workbench"
+date: "`r Sys.Date()`"
+weight: 3
+chapter: false
+pre: " <b> 3.3. </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Connect to MySQL Workbench
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+In MySQL Workbench, create a new connection by selecting **MySQL Connections** > **+ (Add Connection)**.
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+![alt text](image.png)
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+### Enter the following connection details:
+
+- **Hostname**: your database endpoint (provided during RDS creation)
+- **Username**: database username (`admin`)
+- **Password**: database password (`Admin2025`)
+
+![alt text](image-2.png)
+
+After entering the information, click on the newly created connection to initiate it:
+
+![alt text](<image (2).png>)
+
+✅ **Connection successful** if no errors occur and the database interface is displayed.
+
+## Create a new schema in MySQL Workbench
+
+1. Right-click and select **Create Schema..**
+
+![alt text](image-1.png)
+
+2. Enter schema name: **jobseeker-db**
+3. Click **Apply**
+
+![alt text](image-3.png)
+
+> ⚠️ Save this schema name for use in the backend configuration later.

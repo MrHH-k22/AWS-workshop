@@ -1,21 +1,57 @@
 ---
-title : "Introduction"
-date :  "`r Sys.Date()`" 
-weight : 1 
-chapter : false
-pre : " <b> 1. </b> "
+title: "AWS Services"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 1.2 </b> "
 ---
-**Session Manager** is a function within the AWS System Manager service, SSM provides verifiable and secure version management without opening incoming ports, without Bastion Host or SSH key management. Session Manager also makes it easy to comply with corporate policies that require controlled access to instances, strict security practices, and fully auditable logs with instance access details, while still providing end-users with one-click cross-platform access to your managed instances.
 
-By using Session Manager, you get the following advantages that traditional methods do not have:
+## AWS Services Used
 
-- No need to open port 22 for SSH protocol, so it is more secure.
-- Can be configured so that the connection does not need to go outside the internet, so it is more secure.
-- No need to manage the server's private key to connect to SSH.
-- Centralized management of users using AWS IAM.
-- Access to the server easily and simply with one click.
-- Faster access time than traditional methods like SSH
-- Support many different operating systems such as Linux, Windows, MacOS
-- Log the connection sessions and commands executed while connecting to the server.
-  
-With the above advantages, you can use Session Manager instead of using Bastion host technique to save us time and money when managing Bastion server. 
+---
+
+### Amazon CloudFront
+
+<img src="image-2.png" alt="Amazon CloudFront" width="400"/>
+
+Amazon CloudFront is a Content Delivery Network (CDN) service that securely delivers data with low latency and high transfer speed.
+
+---
+
+### Amazon S3
+
+<img src="image.png" alt="Amazon S3" width="400"/>
+
+Amazon S3 (Simple Storage Service) is an object storage service that allows flexible, secure, and highly scalable data storage and retrieval. It is commonly used to store images, videos, backups, or static website content.
+
+---
+
+### AWS IAM
+
+<img src="image-1.png" alt="AWS IAM" width="400"/>
+
+AWS IAM (Identity and Access Management) is a service for managing users and access permissions within the AWS ecosystem. It allows you to create users, groups, and roles, and assign policies to securely control access to resources.
+
+---
+
+### AWS Elastic Beanstalk
+
+<img src="image-3.png" alt="AWS Elastic Beanstalk" width="400"/>
+
+AWS Elastic Beanstalk helps you deploy and manage web applications automatically. Simply upload your source code, and Beanstalk will handle infrastructure configuration, load balancing, auto-scaling, and application monitoring.
+
+---
+
+### AWS RDS
+
+<img src="image-4.png" alt="AWS RDS" width="400"/>
+
+AWS RDS (Relational Database Service) is a managed relational database service that supports various engines like MySQL, PostgreSQL, SQL Server, and Oracle. It simplifies deployment, operation, backup, security, and scaling of relational databases.
+
+---
+
+### AWS Backup
+
+<img src="image-5.png" alt="AWS Backup" width="400"/>
+
+AWS Backup is a service for automating backup and recovery across multiple AWS services such as EBS, RDS, DynamoDB, S3, etc. It offers centralized backup management, scheduling, policy control, and ensures compliance with security requirements.

@@ -1,21 +1,46 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Set Up Security Group for Database"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 3.1. </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Create a New Security Group
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+1. Go to the **AWS Management Console** homepage at [https://aws.amazon.com/](https://aws.amazon.com/)
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+2. Search for and select the **VPC** service.
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+![alt text](image.png)
+
+3. In the VPC Dashboard, select **Security Groups**.
+
+4. Click the **Create Security Group** button to create a new one.
+
+![alt text](image-2.png)
+
+5. In the **Basic Details** section, fill in the following information:
+
+   - **Security group name**: `jobseeker-db`
+   - **Description**: `Allow RDS port to anywhere`
+   - **VPC**: Select the default VPC
+
+![alt text](image-3.png)
+
+6. Add a new **Inbound Rule**:
+
+   - **Type**: `MySQL/Aurora`
+   - **Source**: `Anywhere - IPv4`
+
+![alt text](image-4.png)
+
+> Note: Leave the **Outbound Rules** as default.
+
+7. Click **Create Security Group** to finish.
+
+---
+
+### Result After Successfully Creating the Security Group:
+
+![alt text](image-5.png)

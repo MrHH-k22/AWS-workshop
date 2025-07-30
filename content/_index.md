@@ -5,20 +5,63 @@ weight: 1
 chapter: false
 ---
 
-# Building a serverless web application
+# Designing a Web App System Using Elastic Beanstalk and CloudFront
 
-### Overall
+### Overview
 
-In this lab, you'll learn the basics and practice of Amazon System Manager - Session Manager
-. Perform creating public and private instance connections.
+In this lab, you will learn how to build a complete web application on the AWS cloud platform. The lab is practice-oriented, helping you get familiar with various AWS services through hands-on deployment steps.
 
-![ConnectPrivate](/images/arc-log.png)
+Specifically, you will be guided to use:
 
-### Content
+- **Amazon S3**: Store static websites
+- **Amazon RDS**: Host SQL databases
+- **AWS Elastic Beanstalk**: Deploy and scale web applications
+- **Amazon CloudFront**: Distribute content and secure access
 
-1.  [Introduction ](1-introduce/)
-2.  [Preparation](2-prerequiste/)
-3.  [Connect to EC2 instance](3-accessibilitytoinstances/)
-4.  [Manage session logs](4-s3log/)
-5.  [Port Forwarding](5-Portfwd/)
-6.  [Clean up resources](6-cleanup/)
+The goal of this workshop is to help you understand how to deploy a real-world application system in the cloud environment.
+
+![ConnectPrivate](/images/workshop-architect.png)
+
+---
+
+### Estimated Cost
+
+This workshop **does not incur any cost** as you will be using the **AWS Free Tier** (free for the first 12 months for new accounts), which includes access to basic AWS services.
+
+---
+
+### Estimated Time to Complete
+
+The workshop is expected to take around **2–3 hours**, including hands-on practice using the AWS Console:
+
+1. **Introduction (15–20 minutes)**:
+
+   - Objectives
+   - AWS Services
+   - System Architecture
+
+2. **Prerequisites (5–10 minutes)**:
+
+   - AWS Account
+   - IDE and development environment
+
+3. **Deployment Practice (60–90 minutes)**:
+
+   - Create the database
+   - Deploy the backend
+   - Build and deploy the frontend
+
+4. **Resource Cleanup (15–20 minutes)**:
+   - Delete all resources to avoid post-workshop charges
+
+---
+
+### Contents
+
+1. [Introduction](1-introduce/)
+2. [Prerequisites](2-prerequiste/)
+3. [Database Design Using AWS RDS](3-create-database/)
+4. [Deploy Backend with AWS Beanstalk](4-deploy-backend/)
+5. [Build & Deploy Static Frontend](5-deploy-frontend/)
+6. [Test Application Features](6-testing/)
+7. [Clean Up Resources](7-cleanup/)

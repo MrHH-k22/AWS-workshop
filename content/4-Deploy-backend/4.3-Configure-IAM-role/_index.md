@@ -1,21 +1,73 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Configuring IAM Role for AWS Beanstalk"
+date: "`r Sys.Date()`"
+weight: 3
+chapter: false
+pre: " <b> 4.3 </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Create IAM Roles for AWS Elastic Beanstalk
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+1. Access **AWS Management Console** at [https://aws.amazon.com/](https://aws.amazon.com/)
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+2. Search for and select **Identity and Access Management (IAM)** service.
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+![alt text](image.png)
+
+3. Switch to the **Roles** tab and click **Create role** to begin.
+
+---
+
+### A. Create Role for EC2 Instance within Beanstalk Environment
+
+#### **Step 1: Select Trusted Entity**
+
+- **Trusted entity type**: `AWS Service`
+- **Service or use case**: `EC2`
+- **Use case**: `EC2`
+
+![alt text](image-1.png)
+
+#### **Step 2: Add Permissions**
+
+Search for and add the following policies:
+
+- `AmazonS3FullAccess`
+  > Allows EC2 to access S3 for storing and retrieving images.
+- `AWSElasticBeanstalkCustomPlatformforEC2Role`
+  > Grants permissions for EC2 to build and run custom platforms in Elastic Beanstalk.
+
+#### **Step 3: Name and Complete**
+
+- **Role name**: `aws-elasticbeanstalk-ec2-role`
+- Review the added policies before clicking **Create role**.
+
+![alt text](image-2.png)
+
+#### ✅ Result after successfully creating the role:
+
+![alt text](image-3.png)
+
+---
+
+### B. Create Role for Elastic Beanstalk Service
+
+Repeat the same steps as in section A, but with the following configuration:
+
+#### **Trusted Entity**
+
+- **Service or use case**: `Elastic Beanstalk`
+- **Use case**: `Elastic Beanstalk - Environment`
+
+#### **Add the following policies:**
+
+- `AWSElasticBeanstalkEnhancedHealth`
+- `AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy`
+
+> These policies allow Beanstalk to manage environment health and updates more effectively.
+
+#### **Role name**: `aws-elasticbeanstalk-service-role`
+
+#### ✅ Result after creation:
+
+![alt text](image-4.png)

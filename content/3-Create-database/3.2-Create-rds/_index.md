@@ -1,21 +1,71 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Create RDS Instance (MySQL)"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 3.2. </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Create a New Database with Amazon RDS
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+1. Go to the **AWS Management Console** at [https://aws.amazon.com/](https://aws.amazon.com/)
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+2. Search for and select the **RDS** or **Aurora and RDS** service.
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+![alt text](image.png)
+
+3. Click the **Create a database** button.
+
+![alt text](createadatabase.png)
+
+4. In the **Create database** section, configure the following settings:
+
+   - **Database creation method**: `Standard Create`
+   - **Engine type**: `MySQL`
+   - **Engine version**: `8.0.41`
+   - **RDS Extended Support**: **Off**
+
+![alt text](image-1.png)
+
+5. **Template** and **Availability & Durability**:
+
+   - Leave as default (Free Tier will be used)
+
+![alt text](image-2.png)
+
+6. **Settings**:
+
+   - **DB instance identifier**: `jobseeker-db`
+   - **Master username**: `admin`
+   - **Credential management**: `Self-managed`
+   - **Master password**: `Admin2025` (or a stronger password of your choice)
+
+> ⚠️ Remember this information — it will be needed during backend configuration.
+
+![alt text](image-3.png)
+
+7. **Instance Configuration** and **Storage**:
+
+   - Keep the default settings
+   - You may reduce the allocated storage to **20 GB** as the lab does not require much
+
+![alt text](image-4.png)
+
+8. **Connectivity**:
+
+   - **VPC**: Select the **default VPC**
+   - **Security group**: Select the **Security Group created in the previous step**
+   - **Public access**: Select **Yes**
+   - Leave the remaining settings as default
+
+![alt text](image-5.png)
+
+9. Click **Create Database** to start the process.
+
+---
+
+### Result After Database Creation:
+
+![alt text](image-6.png)
+
+> ⚠️ Save the database endpoint — you will need it when configuring the backend.

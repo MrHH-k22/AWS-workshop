@@ -1,24 +1,24 @@
 ---
-title: "Session Management"
+title: "Feature Testing in the Application"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 6
 chapter: false
+pre: " <b> 6. </b> "
 ---
 
-# Building a serverless web application
+## Overview
 
-### Overall
+In this section, we will conduct a basic test of the feature in the deployed JobSeeker application. Testing will ensure that all components are functioning correctly and are smoothly integrated with each other.
 
-In this lab, you'll learn the basics and practice of Amazon System Manager - Session Manager
-. Perform creating public and private instance connections.
+### Objectives
 
-![ConnectPrivate](/images/arc-log.png)
+- Verify user registration and login functionality
+- Test features for creating, editing, and managing jobs
+- Test image upload and display functionality from S3
 
-### Content
+### Contents
 
-1.  [Introduction ](1-introduce/)
-2.  [Preparation](2-prerequiste/)
-3.  [Connect to EC2 instance](3-accessibilitytoinstances/)
-4.  [Manage session logs](4-s3log/)
-5.  [Port Forwarding](5-Portfwd/)
-6.  [Clean up resources](6-cleanup/)
+1. [**Test Registration & Login**](6.1-registerlogin/) – Test authentication and authorization features
+2. [**Test Image Upload**](6.2-s3image-testing/) – Test image upload and display functionality on S3
+
+---

@@ -1,21 +1,27 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Deploy Backend with AWS Beanstalk"
+date: "`r Sys.Date()`"
+weight: 4
+chapter: false
+pre: " <b> 4. </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Overview
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+In this section, we will deploy the Java Spring Boot backend application to **AWS Elastic Beanstalk** to handle APIs and business logic. AWS Elastic Beanstalk automatically configures EC2, creates Security Groups, and manages network interfaces, simplifying the deployment process.
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+### Objectives
+
+- Create an S3 Bucket to store images uploaded by users
+- Prepare and build the Spring Boot application into a JAR file
+- Configure the necessary IAM Roles for AWS Elastic Beanstalk
+- Deploy the backend to Elastic Beanstalk with appropriate environment variables
 
 ### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+
+1. [**Create an S3 Bucket for Images**](4.1-Image-S3-bucket/) – Create and configure an S3 bucket for file uploads
+2. [**Set up Spring Boot App**](4.2-Setup-Springboot-app/) – Clone, build, and prepare the JAR file for deployment
+3. [**Configure IAM Role**](4.3-Configure-IAM-role/) – Create the required IAM roles for Elastic Beanstalk
+4. [**Deploy to AWS Beanstalk**](4.4-Create-beanstalk/) – Create and configure the Elastic Beanstalk environment
+
+---

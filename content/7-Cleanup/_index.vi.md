@@ -108,3 +108,5 @@ _(Thực hiện thủ công theo yêu cầu nếu có IAM role liên quan đến
 3. Sau một khoảng thời gian chờ đợi (khi trạng thái đã chuyển sang "Disabled"), nhấn **Delete** để xóa distribution.
 
    ![alt text](image-14.png)
+
+✅ Như vậy, chúng ta đã hoàn tất việc dọn dẹp tài nguyên.

@@ -1,21 +1,51 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Create a New S3 Bucket for Image Storage/Retrieval"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 4.1 </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Create an S3 Bucket
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+1. Go to the **AWS Management Console** at [https://aws.amazon.com/](https://aws.amazon.com/)
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+2. Search for and select the **S3** service.
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+![alt text](image.png)
+
+3. In the **General purpose buckets** section, click **Create Bucket**.
+
+4. Enter a bucket name: `jobseeker-uploadimage`
+
+![alt text](image-3.png)
+
+5. In the **Block Public Access settings** section, do the following:
+
+   - **Turn off all block public access options**
+
+![alt text](image-2.png)
+
+6. Keep the remaining settings as default.
+
+7. Click **Create Bucket** to complete.
+
+---
+
+### Result after creating the S3 Bucket:
+
+![alt text](image-4.png)
+
+> ⚠️ **Save the bucket name and region** for use in backend configuration later.
+
+---
+
+## Set Up Bucket Policy
+
+1. Go to the **Permissions** tab of the bucket.
+
+2. Scroll down to **Bucket policy** and click **Edit**.
+
+![alt text](image-5.png)
+
+3. Paste the following JSON into the policy section:

@@ -12,8 +12,6 @@ Mục đích của bài lab là cung cấp cho người học một trải nghi�
 
 #### Các mục tiêu học tập
 
-Thực hành AWS Services: Sử dụng thành thạo các dịch vụ AWS cốt lõi
-
 Xây dựng ứng dụng thực tế: Tạo ra web app có đầy đủ tính năng CRUD và upload hình ảnh
 
 Tối ưu hiệu năng: Áp dụng best practices cho bảo mật và performance

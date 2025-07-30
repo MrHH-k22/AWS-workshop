@@ -1,24 +1,46 @@
 ---
-title: "Session Management"
+title: "Image Storage Testing"
 date: "`r Sys.Date()`"
-weight: 1
+weight: 2
 chapter: false
+pre: " <b> 6.2 </b> "
 ---
 
-# Building a serverless web application
+## Create a New Company
 
-### Overall
+1. Go to the **Dashboard** and select the **Company** tab.
+2. Click the **Add New** button.
+3. Fill in the company details and choose an image, then click **Create**.
 
-In this lab, you'll learn the basics and practice of Amazon System Manager - Session Manager
-. Perform creating public and private instance connections.
+   ![alt text](image.png)
 
-![ConnectPrivate](/images/arc-log.png)
+4. After successful creation, the company information will be displayed:
 
-### Content
+   ![alt text](image-1.png)
 
-1.  [Introduction ](1-introduce/)
-2.  [Preparation](2-prerequiste/)
-3.  [Connect to EC2 instance](3-accessibilitytoinstances/)
-4.  [Manage session logs](4-s3log/)
-5.  [Port Forwarding](5-Portfwd/)
-6.  [Clean up resources](6-cleanup/)
+5. Return to the homepage, and you'll see the newly created company listed.
+
+   ![alt text](image-7.png)
+
+---
+
+### Check on AWS S3
+
+- Go to your S3 Bucket to verify whether the image has been successfully stored.
+
+  ![alt text](image-2.png)
+
+✅ The image has been successfully stored on S3.
+
+---
+
+### Check in the Database
+
+- In the **Company** table, the data is saved along with the image file's URL pointing to the S3 Bucket.
+
+  ![alt text](image-3.png)
+
+---
+
+✅ We have successfully tested the image storage feature in the project.  
+Other features will be implemented and tested in a similar manner.

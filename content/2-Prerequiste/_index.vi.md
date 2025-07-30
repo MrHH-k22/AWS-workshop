@@ -6,18 +6,72 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-{{% notice info %}}
-Bạn cần tạo sẵn 1 Linux instance thuộc public subnet và 1 Window instance thuộc private subnet để thực hiện bài thực hành này.
-{{% /notice %}}
+## A. Tài khoản và quyền truy cập
 
-Để tìm hiểu cách tạo các EC2 instance và VPC với public/private subnet các bạn có thể tham khảo bài lab :
+Tài khoản AWS có đầy đủ quyền truy cập các dịch vụ:
 
-- [Giới thiệu về Amazon EC2](https://000004.awsstudygroup.com/vi/)
-- [Làm việc với Amazon VPC](https://000003.awsstudygroup.com/vi/)
+- **Amazon S3** (Simple Storage Service)
+- **Amazon RDS** (Relational Database Service)
+- **AWS Elastic Beanstalk**
+- **Amazon CloudFront**
+- **AWS IAM** (Identity and Access Management)
+- **Amazon VPC** (Virtual Private Cloud)
+- **Amazon EC2** (Elastic Compute Cloud)
 
-Để sử dụng System Manager để quản lý window instance nói riêng và các instance nói chung của chúng ta trên AWS, ta cần phải cung cấp quyền cho các instance của chúng ta có thể làm việc với System Manager.Trong phần chuẩn bị này, chúng ta cũng sẽ tiến hành tạo IAM Role để cấp quyền cho các instance có thể làm việc với System Manager.
+**Khuyến nghị**: Tạo và sử dụng tải khoản AWS root
 
-### Nội dung
+## B. Môi trường phát triển
 
-- [Chuẩn bị VPC và EC2 Instance](2.1-createec2/)
-- [Tạo IAM Role](2.2-createiamrole/)
+- **Node.js** (phiên bản 16 trở lên)
+- **npm** hoặc **yarn** package manager
+- **Git** để clone repository
+- Text editor (VS Code, IntelliJ, v.v.)
+- **Java JDK 17** trở lên
+- IDE hỗ trợ Java (IntelliJ IDEA, Eclipse, v.v.)
+
+---
+
+## C. Kiến thức cơ bản
+
+Hiểu biết cơ bản về các dịch vụ AWS core:
+
+- S3 buckets và bucket policies
+- RDS và MySQL database
+- Elastic Beanstalk deployment
+- CloudFront distribution
+- IAM roles và policies
+
+---
+
+## D. Chuẩn bị trước khi bắt đầu
+
+### 1. Repository cần thiết
+
+- Truy cập được các GitHub repositories:
+  - Frontend: `https://github.com/MrHH-k22/jobseeker-frontend.git`
+  - Backend: `https://github.com/MrHH-k22/jobseeker-backend.git`
+
+### 2. Chuẩn bị thông tin
+
+- Ghi chú sẵn các thông tin sẽ cần dùng:
+  - Tên các S3 buckets
+  - Database credentials
+  - Region sử dụng (khuyến nghị: `ap-southeast-1`)
+  - Endpoint URLs
+
+---
+
+## E. Ước tính chi phí
+
+⚠️ **Lưu ý quan trọng**: Workshop này sử dụng các dịch vụ AWS có thể phát sinh chi phí:
+
+- **RDS MySQL**: ~$15-25/tháng (nếu không dùng Free Tier)
+- **Elastic Beanstalk**: Miễn phí (chỉ trả phí EC2 instance)
+- **S3**: ~$1-5/tháng tùy usage
+- **CloudFront**: ~$1-10/tháng tùy traffic
+
+**Khuyến nghị**: Thực hiện cleanup sau khi hoàn thành để tránh chi phí không mong muốn.
+
+---
+
+✅ **Sau khi đã chuẩn bị đầy đủ các yêu cầu trên, bạn có thể tiến hành các bước tiếp theo của workshop.**

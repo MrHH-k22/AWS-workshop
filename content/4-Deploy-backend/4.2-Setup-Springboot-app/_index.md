@@ -1,21 +1,33 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Setting up Spring Boot app"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 4.2 </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Clone the Spring Boot app
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+1. Clone this GitHub repository using the following URL:
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+   ```
+   git clone https://github.com/MrHH-k22/jobseeker-backend.git
+   ```
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+2. Navigate to the repository directory
+
+   ```
+   cd jobseeker-backend
+   ```
+
+3. Run the following command to package the Spring Boot app into a JAR file
+
+- ```
+  ./gradlew bootJar
+  ```
+
+4. In the repository directory, go to **build/libs/** to get the JAR file
+
+![alt text](image.png)
+
+-> We will use this JAR file to deploy to AWS Beanstalk

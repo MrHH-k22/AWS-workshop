@@ -1,21 +1,25 @@
 ---
-title : "Preparation "
-date : "`r Sys.Date()`"
-weight : 2
-chapter : false
-pre : " <b> 2. </b> "
+title: "Database Design Using AWS RDS"
+date: "`r Sys.Date()`"
+weight: 3
+chapter: false
+pre: " <b> 3. </b> "
 ---
 
-{{% notice info %}}
-You need to create 1 Linux instance on the public subnet and 1 Window instance on the private subnet to perform this lab.
-{{% /notice %}}
+## Overview
 
-To learn how to create EC2 instances and VPCs with public/private subnets, you can refer to the lab:
-  - [About Amazon EC2](https://000004.awsstudygroup.com/en/)
-  - [Works with Amazon VPC](https://000003.awsstudygroup.com/en/)
+In this section, we will design and deploy the database for the JobSeeker application using **Amazon RDS (Relational Database Service)**. The database plays a crucial role in storing and managing the application's business data.
 
-In order to use System Manager to manage our window instances in particular and our instances in general on AWS, we need to give permission to our instances to be able to work with System Manager. In this preparation, we will also proceed to create an IAM Role to grant permissions to instances that can work with System Manager.
+### Objectives
 
-### Content
-  - [Prepare VPC and EC2](2.1-createec2/)
-  - [Create IAM Role](2.2-createiamrole/)
+- Create and configure a Security Group for the database to ensure security
+- Deploy a MySQL instance on Amazon RDS with appropriate settings
+- Set up the connection and prepare the schema for the application
+
+### Contents
+
+1. [**Set Up Security Group for the Database**](3.1-Security-group/) – Create and configure a security group to control access to the database
+2. [**Create RDS Instance (MySQL)**](3.2-Create-rds/) – Deploy a MySQL database instance on Amazon RDS
+3. [**Connect to MySQL Workbench**](3.3-Connect/) – Establish the connection and create the application's schema
+
+---
