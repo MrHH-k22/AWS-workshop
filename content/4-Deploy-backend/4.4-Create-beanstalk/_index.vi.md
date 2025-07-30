@@ -90,7 +90,7 @@ pre: " <b> 4.4 </b> "
 | **Key**                                        | **Value**                                                                                  |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | AWS_S3_BASE_FOLDER                             | uploads/                                                                                   |
-| AWS_S3_BUCKET                                  | Tên của S3 bucket đã tạo ở bước trước (ví dụ: `jobseeker-uploadfile`)                      |
+| AWS_S3_BUCKET                                  | Tên của S3 bucket đã tạo ở bước trước (ví dụ: `jobseeker-uploadimage`)                     |
 | AWS_S3_REGION                                  | Vùng (region) của S3 bucket, ví dụ: `ap-southeast-1`                                       |
 | GRADLE_HOME                                    | /usr/local/gradle                                                                          |
 | HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS  | 3600                                                                                       |

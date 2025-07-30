@@ -90,7 +90,7 @@ pre: " <b> 4.4 </b> "
 | **Key**                                        | **Value**                                                                                  |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | AWS_S3_BASE_FOLDER                             | uploads/                                                                                   |
-| AWS_S3_BUCKET                                  | Name of the S3 bucket created in the previous step (e.g., `jobseeker-uploadfile`)          |
+| AWS_S3_BUCKET                                  | Name of the S3 bucket created in the previous step (e.g., `jobseeker-uploadimage`)         |
 | AWS_S3_REGION                                  | Region of the S3 bucket, e.g., `ap-southeast-1`                                            |
 | GRADLE_HOME                                    | /usr/local/gradle                                                                          |
 | HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS  | 3600                                                                                       |

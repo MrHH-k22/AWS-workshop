@@ -49,3 +49,30 @@ pre: " <b> 4.1 </b> "
 ![alt text](image-5.png)
 
 3. Paste the following JSON into the policy section:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::jobseeker-uploadimage/*"
+        }
+    ]
+}
+```
+
+![alt text](image-6.png)
+
+- This is an AWS S3 bucket policy that allows everyone to download (read) files in the bucket jobseeker-uploadimage.
+
+> ⚠️ If you use a different bucket name, replace `jobseeker-uploadimage` in the `"Resource"` section with your bucket name.
+
+4. Click **Save** to save the policy.
+
+---
+
+✅ You have completed setting up an **S3 Bucket** to serve image storage and retrieval.

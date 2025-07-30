@@ -14,6 +14,7 @@ In MySQL Workbench, create a new connection by selecting **MySQL Connections** >
 
 ### Enter the following connection details:
 
+- **Connection name**: (`aws-jobseeker-db`)
 - **Hostname**: your database endpoint (provided during RDS creation)
 - **Username**: database username (`admin`)
 - **Password**: database password (`Admin2025`)

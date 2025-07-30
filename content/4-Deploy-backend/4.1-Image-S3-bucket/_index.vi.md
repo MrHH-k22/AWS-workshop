@@ -65,11 +65,13 @@ pre: " <b> 4.1 </b> "
 }
 ```
 
+- Đây là một bucket policy của AWS S3 cho phép tất cả có thể tải về (read) các file trong bucket jobseeker-uploadimage.
+
 ![alt text](image-6.png)
 
 > ⚠️ Nếu bạn sử dụng tên bucket khác, hãy thay thế `jobseeker-uploadimage` trong phần `"Resource"` bằng tên bucket của bạn.
 
-4. Nhấn **Save** để lưu lại policy.
+1. Nhấn **Save** để lưu lại policy.
 
 ---
 

@@ -42,5 +42,9 @@ pre: " <b> 6.2 </b> "
 
 ---
 
-✅ We have successfully tested the image storage feature in the project.  
-Other features will be implemented and tested in a similar manner.
+✅ We have successfully tested the image storage feature in the project.
+
+<div style="border-left: 5px solid #1E90FF; background-color: #e6f2ff; padding: 1em; margin: 1em 0;">
+<strong>Note:</strong><br>
+Các tính năng khác cũng sẽ được thực hiện và kiểm tra tương tự.
+</div>

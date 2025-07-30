@@ -14,6 +14,7 @@ Trong MySQL Workbench, tạo một kết nối mới bằng cách chọn **MySQL
 
 ### Nhập các thông tin kết nối như sau:
 
+- **Connection name**: tên connection (`aws-jobseeker-db`)
 - **Hostname**: endpoint của database (được cung cấp khi tạo RDS)
 - **Username**: tên người dùng cơ sở dữ liệu (`admin`)
 - **Password**: mật khẩu của cơ sở dữ liệu (`Admin2025`)
