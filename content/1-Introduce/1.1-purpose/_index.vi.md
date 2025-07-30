@@ -8,11 +8,9 @@ pre: " <b> 1.1 </b> "
 
 ### Mục đích
 
-Mục đích của bài lab là giúp các bạn tạo ra 1 web app hoàn toàn không cần tới server. Thay vào đó, chúng ta sẽ sử dụng các dịch vụ của AWS để hỗ trợ chúng ta trong việc xây dựng một ứng dụng web hiện đại, có khả năng mở rộng và tiết kiệm chi phí.
+Mục đích của bài lab là cung cấp cho người học một trải nghiệm thực hành toàn diện về việc xây dựng ứng dụng web hiện đại. Bằng cách sử dụng các dịch vụ của AWS để hỗ trợ chúng ta trong việc xây dựng một ứng dụng web hiện đại, có khả năng mở rộng và tiết kiệm chi phí.
 
 #### Các mục tiêu học tập
-
-Hiểu khái niệm Serverless: Nắm vững nguyên lý hoạt động của kiến trúc serverless
 
 Thực hành AWS Services: Sử dụng thành thạo các dịch vụ AWS cốt lõi
 

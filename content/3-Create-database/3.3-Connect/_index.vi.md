@@ -25,3 +25,16 @@ Sau khi nhập đầy đủ thông tin, nhấn vào kết nối vừa tạo đ�
 ![alt text](<image (2).png>)
 
 ✅ **Kết nối thành công** nếu không có lỗi xảy ra và giao diện database được hiển thị.
+
+## Tạo scheme mới trong MySQL Connection
+
+1. Bấm chuột phải và chọn **Create Schema..**
+
+![alt text](image-1.png)
+
+2. Nhập tên scheme: **jobseeker-db**
+3. Nhấn **apply**
+
+![alt text](image-3.png)
+
+> ⚠️ Lưu tên scheme này để sử dụng trong phần cấu hình backend sau.

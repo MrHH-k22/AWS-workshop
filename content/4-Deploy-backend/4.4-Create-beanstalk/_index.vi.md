@@ -100,7 +100,7 @@ pre: " <b> 4.4 </b> "
 | M2_HOME                                        | /usr/local/apache-maven                                                                    |
 | PORT                                           | 8080                                                                                       |
 | SPRING_DATASOURCE_PASSWORD                     | Mật khẩu truy cập cơ sở dữ liệu (do bạn thiết lập khi tạo database)                        |
-| SPRING_DATASOURCE_URL                          | JDBC URL của cơ sở dữ liệu (ví dụ: `jdbc:mysql://<host>:<port>/<dbname>`)                  |
+| SPRING_DATASOURCE_URL                          | JDBC URL của cơ sở dữ liệu (ví dụ: `jdbc:mysql://<host>:<port>/<scheme>`)                  |
 | SPRING_DATASOURCE_USERNAME                     | Tên đăng nhập cơ sở dữ liệu (ví dụ: `admin`)                                               |
 | SPRING_JPA_HIBERNATE_DDL_AUTO                  | update                                                                                     |
 

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 4.2 </b> "
 ---
 
-## Clone app springboot về
+## Clone springboot app về
 
 1. clone github respository này về với đường dẫn sau:
 
