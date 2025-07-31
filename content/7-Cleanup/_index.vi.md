@@ -45,6 +45,14 @@ Chúng ta sẽ thực hiện dọn dẹp các tài nguyên AWS theo thứ tự s
 
    ![alt text](image-2.png)
 
+#### 4. Xóa AWS Backup
+
+1. Truy cập dịch vụ **AWS Backup** → chọn **Backup plans**.
+2. Chọn Backup plan được tạo riêng cho RDS.
+3. Chọn **Delete** để xóa
+
+![alt text](image-15.png)
+
 ---
 
 ### B. Xóa tài nguyên Elastic Beanstalk

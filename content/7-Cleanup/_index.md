@@ -45,6 +45,14 @@ We will clean up AWS resources in the following order:
 
    ![alt text](image-2.png)
 
+#### 4. Delete AWS Backup
+
+1. Go to **AWS Backup** service → select **Backup plans**.
+2. Select the Backup plan created specifically for RDS.
+3. Click **Delete**
+
+![alt text](image-15.png)
+
 ---
 
 ### B. Delete Elastic Beanstalk Resources

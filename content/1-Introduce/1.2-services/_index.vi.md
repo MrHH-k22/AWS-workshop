@@ -10,6 +10,12 @@ pre: " <b> 1.2 </b> "
 
 ---
 
+### AWS Web Application Firewall
+
+<img src="aws-waf-8x.png" alt="Amazon CloudFront" width="400"/>
+
+AWS WAF là một dịch vụ bảo mật của AWS giúp bảo vệ các ứng dụng web khỏi các cuộc tấn công phổ biến như SQL injection, Cross-site scripting (XSS), DDos...
+
 ### Amazon CloudFront
 
 <img src="image-2.png" alt="Amazon CloudFront" width="400"/>

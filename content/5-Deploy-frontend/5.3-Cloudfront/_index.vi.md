@@ -58,9 +58,11 @@ http://{bucket-name}.s3-website.{region}.amazonaws.com
 
 ### Bước 5: Thiết lập bảo mật (Enable Security)
 
-- Chọn: **Do not enable security protections**
+- Chọn: **Enable security protections**
 
-  ![alt text](image-6.png)
+  ![alt text](image-12.png)
+
+> Bật AWS WAF giúp bảo mật web hơn vì ngăn chặn các tấn công phổ biến như SQL Injection, XSS, và HTTP Flood. Đồng thời chặn các yêu cầu độc hại ngay tại CloudFront, giảm tải cho backend.
 
 - Sau đó, kiểm tra lại toàn bộ cấu hình và nhấn **Create distribution** để hoàn tất quá trình tạo.
 

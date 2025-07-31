@@ -58,9 +58,11 @@ http://{bucket-name}.s3-website.{region}.amazonaws.com
 
 ### Step 5: Set up Security (Enable Security)
 
-- Select: **Do not enable security protections**
+- Select: **Enable security protections**
 
-  ![alt text](image-6.png)
+  ![alt text](image-12.png)
+
+> Enabling AWS WAF enhances web security by preventing common attacks such as SQL Injection, XSS, and HTTP Flood. It also blocks malicious requests directly at CloudFront, reducing the load on the backend.
 
 - Then, review all configurations and click **Create distribution** to complete the creation process.
 
