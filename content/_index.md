@@ -20,7 +20,7 @@ Specifically, you will be guided to use:
 
 The goal of this workshop is to help you understand how to deploy a real-world application system in the cloud environment.
 
-![ConnectPrivate](/images/workshop-architect.png)
+![alt text](workshop-architect.png)
 
 ---
 

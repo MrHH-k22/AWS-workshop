@@ -8,7 +8,7 @@ pre: "<b> 1.3 </b>"
 
 ## Tổng quan kiến trúc
 
-![ConnectPrivate](/images/workshop-architect.png)
+![alt text](workshop-architect.png)
 
 Hệ thống được thiết kế theo nguyên tắc **microservices** và **cloud-native**, sử dụng các dịch vụ được quản lý sẵn của AWS. Điều này giúp giảm thiểu công việc quản trị hạ tầng, cho phép tập trung vào phát triển logic nghiệp vụ.
 

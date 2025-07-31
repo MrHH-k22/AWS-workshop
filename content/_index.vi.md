@@ -20,7 +20,7 @@ Cụ thể, bạn sẽ được hướng dẫn sử dụng:
 
 Mục tiêu của workshop là giúp bạn hiểu cách triển khai một hệ thống ứng dụng thực tế trên môi trường đám mây.
 
-![ConnectPrivate](/images/workshop-architect.png)
+![alt text](workshop-architect.png)
 
 ---
 

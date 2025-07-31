@@ -8,7 +8,7 @@ pre: "<b> 1.3 </b>"
 
 ## Architecture Overview
 
-![ConnectPrivate](/images/workshop-architect.png)
+![alt text](workshop-architect.png)
 
 The system is designed based on **microservices** and **cloud-native** principles, leveraging AWS managed services. This approach minimizes infrastructure management and allows developers to focus on implementing business logic.
 
