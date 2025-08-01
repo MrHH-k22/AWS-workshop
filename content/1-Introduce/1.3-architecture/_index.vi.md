@@ -24,6 +24,8 @@ Hệ thống được thiết kế theo nguyên tắc **microservices** và **cl
 
 Sử dụng các dịch vụ sau để triển khai trang web tĩnh:
 
+- **AWS WAF**
+  Bảo vệ các ứng dụng web khỏi các cuộc tấn công phổ biến như SQL injection, Cross-site scripting (XSS), DDos...
 - **AWS CloudFront**  
   Phân phối nội dung tĩnh (HTML, CSS, JS) từ Amazon S3 đến người dùng cuối.
 
@@ -56,16 +58,6 @@ Sử dụng các dịch vụ sau:
 
 - **AWS Backup**  
   Tự động sao lưu dữ liệu từ Amazon RDS để đảm bảo khả năng phục hồi khi có sự cố.
-
----
-
-### 🔧 Dịch vụ AWS hỗ trợ thêm
-
-- **Amazon SES**  
-  Gửi email thông báo đến người dùng (ví dụ: xác nhận đăng ký, đặt lại mật khẩu).
-
-- **AWS CloudWatch**  
-  Giám sát hiệu suất hệ thống, ghi log, và gửi cảnh báo từ các dịch vụ như Lambda, API Gateway, DynamoDB và SES.
 
 ---
 
