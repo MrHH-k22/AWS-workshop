@@ -1,5 +1,5 @@
 ---
-title: "Session Management"
+title: "Designing a Web App System Using Elastic Beanstalk and CloudFront"
 date: "`r Sys.Date()`"
 weight: 1
 chapter: false

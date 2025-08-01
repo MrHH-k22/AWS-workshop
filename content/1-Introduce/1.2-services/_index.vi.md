@@ -2,7 +2,7 @@
 title: "Các dịch vụ AWS"
 date: "`r Sys.Date()`"
 weight: 2
-chapter: false
+chapter: 1
 pre: " <b> 1.2 </b> "
 ---
 

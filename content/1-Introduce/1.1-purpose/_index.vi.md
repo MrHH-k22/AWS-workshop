@@ -2,7 +2,7 @@
 title: "Mục đích"
 date: "`r Sys.Date()`"
 weight: 1
-chapter: false
+chapter: 1
 pre: " <b> 1.1 </b> "
 ---
 
