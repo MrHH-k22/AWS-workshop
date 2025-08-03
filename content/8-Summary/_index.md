@@ -49,4 +49,4 @@ In the future, we can expand the system architecture as shown in the following d
 **Amazon CloudWatch**
 
 - Use CloudWatch to monitor the entire system architecture and collect logs, error alerts, etc.
-- Example: when deploying to Beanstalk, S3, logs will be sent to
+- Example: when deploying to Beanstalk, S3. Logs will be sent to Cloudwatch.

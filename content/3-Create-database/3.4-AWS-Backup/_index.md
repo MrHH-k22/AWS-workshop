@@ -1,25 +1,56 @@
 ---
-title: "Database Design Using AWS RDS"
+title: "Enable Backup Feature for AWS RDS"
 date: "`r Sys.Date()`"
-weight: 3
+weight: 4
 chapter: false
-pre: " <b> 3. </b> "
+pre: " <b> 3.4 </b> "
 ---
 
-## Overview
+## Create AWS Backup
 
-In this section, we will design and deploy the database for the JobSeeker application using **Amazon RDS (Relational Database Service)**. The database plays a crucial role in storing and managing the application's business data.
+### 🔹 Step 1: Access AWS Backup Service
 
-### Objectives
+1. Open **AWS Management Console** at: [https://aws.amazon.com/](https://aws.amazon.com/)
+2. Search for and select **AWS Backup** service.
 
-- Create and configure a Security Group for the database to ensure security
-- Deploy a MySQL instance on Amazon RDS with appropriate settings
-- Set up the connection and prepare the schema for the application
-
-### Contents
-
-1. [**Set Up Security Group for the Database**](3.1-Security-group/) – Create and configure a security group to control access to the database
-2. [**Create RDS Instance (MySQL)**](3.2-Create-rds/) – Deploy a MySQL database instance on Amazon RDS
-3. [**Connect to MySQL Workbench**](3.3-Connect/) – Establish the connection and create the application's schema
+![alt text](image.png)
 
 ---
+
+### 🔹 Step 2: Create Backup Plan
+
+3. Select **Backup plans** → click **Create backup plan**.
+4. Configure the backup plan as follows:
+
+   - **Backup plan options**: Build a new plan
+   - **Backup plan name**: `jobseeker-db-weekly`
+   - **Backup rule name**: `weekly-rule`
+   - **Backup vault**: Default
+   - **Backup frequency**: Weekly
+   - Keep all other settings as default.
+
+![alt text](image-1.png)
+
+5. Click **Create plan** to create the backup plan.
+
+---
+
+### 🔹 Step 3: Assign Resources to Backup
+
+6. Configure the **Assign resources** section:
+
+   - **Resource assignment name**: `assign-rds`
+   - **IAM role**: Default role
+   - **Define resource selection**: Select _Include specific resource types_
+   - **Select specific resource types**: Select _RDS_
+   - **Database names**: Select `jobseeker-db`
+
+7. Click **Assign resources** to complete.
+
+---
+
+### Result after Creating AWS Backup
+
+![alt text](image-2.png)
+
+✅ You have successfully set up AWS Backup to automatically backup and restore your RDS database
