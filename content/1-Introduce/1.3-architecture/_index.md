@@ -39,8 +39,8 @@ This tier processes the business logic using AWS services:
 - **AWS Elastic Beanstalk**  
   Automatically deploys and manages the server-side application written in Spring Boot.
 
-- **AWS IAM**  
-  Provides secure permissions for Elastic Beanstalk to access RDS and S3.
+- **AWS S3**  
+  Store and retrieve images.
 
 ---
 
@@ -56,16 +56,6 @@ This tier includes the following services:
 
 - **AWS Backup**  
   Automatically backs up data from Amazon RDS to ensure recovery in case of failures.
-
----
-
-### 🔧 Additional Supporting AWS Services
-
-- **Amazon SES**  
-  Sends email notifications to users (e.g., registration confirmations, password resets).
-
-- **AWS CloudWatch**  
-  Monitors system performance, logs activities, and sends alerts from services like Lambda, API Gateway, DynamoDB, and SES.
 
 ---
 

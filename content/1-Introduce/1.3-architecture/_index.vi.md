@@ -41,8 +41,8 @@ Sử dụng các dịch vụ AWS để xử lý logic nghiệp vụ:
 - **AWS Elastic Beanstalk**  
   Triển khai ứng dụng server-side được viết bằng Spring Boot một cách tự động, dễ quản lý.
 
-- **AWS IAM**  
-  Cấp quyền an toàn để Elastic Beanstalk có thể truy cập vào RDS và S3.
+- **AWS S3**  
+  Lưu trữ và truy vấn hình ảnh.
 
 ---
 
