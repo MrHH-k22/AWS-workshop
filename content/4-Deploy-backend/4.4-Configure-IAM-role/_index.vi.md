@@ -1,9 +1,9 @@
 ---
 title: "Cấu Hình IAM Role cho AWS Beanstalk"
 date: "`r Sys.Date()`"
-weight: 3
+weight: 4
 chapter: false
-pre: " <b> 4.3 </b> "
+pre: " <b> 4.4 </b> "
 ---
 
 ## Tạo các IAM Role cho AWS Elastic Beanstalk

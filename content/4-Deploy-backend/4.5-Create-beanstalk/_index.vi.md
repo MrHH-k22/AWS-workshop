@@ -1,9 +1,9 @@
 ---
 title: "Triển khai AWS Beanstalk"
 date: "`r Sys.Date()`"
-weight: 4
+weight: 5
 chapter: false
-pre: " <b> 4.4 </b> "
+pre: " <b> 4.5 </b> "
 ---
 
 ## Tạo AWS Beanstalk

@@ -1,9 +1,9 @@
 ---
 title: "Setting up Spring Boot app"
 date: "`r Sys.Date()`"
-weight: 2
+weight: 3
 chapter: false
-pre: " <b> 4.2 </b> "
+pre: " <b> 4.3 </b> "
 ---
 
 ## Clone the Spring Boot app
