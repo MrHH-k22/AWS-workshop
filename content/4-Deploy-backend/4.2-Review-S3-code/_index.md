@@ -113,3 +113,15 @@ public String store(MultipartFile file, String folder) throws IOException {
 4. Create **PutObjectRequest** to configure necessary information for upload.
 5. Use S3Client to upload file through **putObject(...)**.
 6. Return key for later use.
+
+### Result
+
+After the upload process is completed, the file will be securely stored on Amazon S3. The system will return an **Object endpoint**, which serves as the identifier to access the uploaded file.
+
+#### In S3 console:
+
+![alt text](image-1.png)
+
+#### Accessing images through **Object endpoint**:
+
+![alt text](image.png)
