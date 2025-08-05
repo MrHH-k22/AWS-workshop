@@ -112,4 +112,4 @@ public String store(MultipartFile file, String folder) throws IOException {
 3. Tạo **key** đại diện cho đường dẫn đầy đủ trong bucket.
 4. Tạo **PutObjectRequest** để cấu hình thông tin cần thiết khi upload.
 5. Sử dụng S3Client để upload file thông qua **putObject(...)**.
-6. Trả về key để có thể sử dụng sau này (ví dụ: truy xuất file).
+6. Trả về key để có thể sử dụng sau này.
