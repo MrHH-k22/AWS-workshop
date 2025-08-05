@@ -66,7 +66,9 @@ Thực hiện lại các bước như ở phần A, nhưng với cấu hình sau
 
 > Những policy này cho phép Beanstalk quản lý tình trạng và cập nhật môi trường hiệu quả hơn.
 
-#### **Role name**: `aws-elasticbeanstalk-service-role`
+#### **Role name**:
+
+`aws-elasticbeanstalk-service-role`
 
 #### ✅ Kết quả sau khi tạo:
 

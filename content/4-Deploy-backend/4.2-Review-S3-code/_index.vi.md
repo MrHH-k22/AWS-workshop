@@ -113,3 +113,15 @@ public String store(MultipartFile file, String folder) throws IOException {
 4. Tạo **PutObjectRequest** để cấu hình thông tin cần thiết khi upload.
 5. Sử dụng S3Client để upload file thông qua **putObject(...)**.
 6. Trả về key để có thể sử dụng sau này.
+
+### Kết quả
+
+Sau khi quá trình upload hoàn tất, file sẽ được lưu trữ an toàn trên Amazon S3. Hệ thống sẽ trả về một **Object endpoint**, đây chính là định danh để truy cập file đã upload.
+
+#### Trong S3 console:
+
+![alt text](image-1.png)
+
+#### Truy vấn hình ảnh thông qua **Object endpoint**:
+
+![alt text](image.png)

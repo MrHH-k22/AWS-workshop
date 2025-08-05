@@ -66,7 +66,9 @@ Repeat the same steps as in section A, but with the following configuration:
 
 > These policies allow Beanstalk to manage environment health and updates more effectively.
 
-#### **Role name**: `aws-elasticbeanstalk-service-role`
+#### **Role name**:
+
+`aws-elasticbeanstalk-service-role`
 
 #### ✅ Result after creation:
 

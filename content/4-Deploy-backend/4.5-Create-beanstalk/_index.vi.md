@@ -87,22 +87,22 @@ pre: " <b> 4.5 </b> "
 - Cuộn xuống cuối trang và thêm các biến môi trường cần thiết cho backend
 - Xóa bỏ các biến môi trường không sử dụng, và cấu hình lại các biến môi trường mới như sau:
 
-| **Key**                                        | **Value**                                                                                  |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| AWS_S3_BASE_FOLDER                             | uploads/                                                                                   |
-| AWS_S3_BUCKET                                  | Tên của S3 bucket đã tạo ở bước trước (ví dụ: `jobseeker-uploadimage`)                     |
-| AWS_S3_REGION                                  | Vùng (region) của S3 bucket, ví dụ: `ap-southeast-1`                                       |
-| GRADLE_HOME                                    | /usr/local/gradle                                                                          |
-| HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS  | 3600                                                                                       |
-| HOIDANIT_JWT_BASE64_SECRET                     | `UxaISAcJlpUx5+626BrxPYyMFphS5WCem/tODCjONXDyKg9wTaZyzwwhi7k6YLs3eJwn4eYdlrdLAYAyrT5FXQ==` |
-| HOIDANIT_JWT_REFRESH_TOKEN_VALIDITY_IN_SECONDS | 2592000                                                                                    |
-| M2                                             | /usr/local/apache-maven/bin                                                                |
-| M2_HOME                                        | /usr/local/apache-maven                                                                    |
-| PORT                                           | 8080                                                                                       |
-| SPRING_DATASOURCE_PASSWORD                     | Mật khẩu truy cập cơ sở dữ liệu (do bạn thiết lập khi tạo database)                        |
-| SPRING_DATASOURCE_URL                          | JDBC URL của cơ sở dữ liệu (ví dụ: `jdbc:mysql://<host>:<port>/<scheme>`)                  |
-| SPRING_DATASOURCE_USERNAME                     | Tên đăng nhập cơ sở dữ liệu (ví dụ: `admin`)                                               |
-| SPRING_JPA_HIBERNATE_DDL_AUTO                  | update                                                                                     |
+| **Key**                                          | **Value**                                                                                  |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `AWS_S3_BASE_FOLDER`                             | uploads/                                                                                   |
+| `AWS_S3_BUCKET`                                  | Tên của S3 bucket đã tạo ở bước trước (ví dụ: `jobseeker-uploadimage`)                     |
+| `AWS_S3_REGION`                                  | Vùng (region) của S3 bucket, ví dụ: `ap-southeast-1`                                       |
+| `GRADLE_HOME`                                    | /usr/local/gradle                                                                          |
+| `HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS`  | 3600                                                                                       |
+| `HOIDANIT_JWT_BASE64_SECRET`                     | `UxaISAcJlpUx5+626BrxPYyMFphS5WCem/tODCjONXDyKg9wTaZyzwwhi7k6YLs3eJwn4eYdlrdLAYAyrT5FXQ==` |
+| `HOIDANIT_JWT_REFRESH_TOKEN_VALIDITY_IN_SECONDS` | 2592000                                                                                    |
+| `M2`                                             | /usr/local/apache-maven/bin                                                                |
+| `M2_HOME`                                        | /usr/local/apache-maven                                                                    |
+| `PORT`                                           | 8080                                                                                       |
+| `SPRING_DATASOURCE_PASSWORD`                     | Mật khẩu truy cập cơ sở dữ liệu (do bạn thiết lập khi tạo database)                        |
+| `SPRING_DATASOURCE_URL`                          | JDBC URL của cơ sở dữ liệu (ví dụ: `jdbc:mysql://<host>:<port>/<scheme>`)                  |
+| `SPRING_DATASOURCE_USERNAME`                     | Tên đăng nhập cơ sở dữ liệu (ví dụ: `admin`)                                               |
+| `SPRING_JPA_HIBERNATE_DDL_AUTO`                  | update                                                                                     |
 
 ![alt text](image-9.png)
 

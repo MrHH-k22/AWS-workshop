@@ -87,22 +87,22 @@ pre: " <b> 4.5 </b> "
 - Scroll to the bottom of the page and add the necessary environment variables for the backend
 - Remove unused environment variables and configure new environment variables as follows:
 
-| **Key**                                        | **Value**                                                                                  |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| AWS_S3_BASE_FOLDER                             | uploads/                                                                                   |
-| AWS_S3_BUCKET                                  | Name of the S3 bucket created in the previous step (e.g., `jobseeker-uploadimage`)         |
-| AWS_S3_REGION                                  | Region of the S3 bucket, e.g., `ap-southeast-1`                                            |
-| GRADLE_HOME                                    | /usr/local/gradle                                                                          |
-| HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS  | 3600                                                                                       |
-| HOIDANIT_JWT_BASE64_SECRET                     | `UxaISAcJlpUx5+626BrxPYyMFphS5WCem/tODCjONXDyKg9wTaZyzwwhi7k6YLs3eJwn4eYdlrdLAYAyrT5FXQ==` |
-| HOIDANIT_JWT_REFRESH_TOKEN_VALIDITY_IN_SECONDS | 2592000                                                                                    |
-| M2                                             | /usr/local/apache-maven/bin                                                                |
-| M2_HOME                                        | /usr/local/apache-maven                                                                    |
-| PORT                                           | 8080                                                                                       |
-| SPRING_DATASOURCE_PASSWORD                     | Database access password (set by you when creating the database)                           |
-| SPRING_DATASOURCE_URL                          | JDBC URL of the database (e.g., `jdbc:mysql://<host>:<port>/<scheme>`)                     |
-| SPRING_DATASOURCE_USERNAME                     | Database username (e.g., `admin`)                                                          |
-| SPRING_JPA_HIBERNATE_DDL_AUTO                  | update                                                                                     |
+| **Key**                                          | **Value**                                                                                  |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `AWS_S3_BASE_FOLDER`                             | uploads/                                                                                   |
+| `AWS_S3_BUCKET`                                  | Name of the S3 bucket created in the previous step (e.g., `jobseeker-uploadimage`)         |
+| `AWS_S3_REGION`                                  | Region of the S3 bucket, e.g., `ap-southeast-1`                                            |
+| `GRADLE_HOME`                                    | /usr/local/gradle                                                                          |
+| `HOIDANIT_JWT_ACCESS_TOKEN_VALIDITY_IN_SECONDS`  | 3600                                                                                       |
+| `HOIDANIT_JWT_BASE64_SECRET`                     | `UxaISAcJlpUx5+626BrxPYyMFphS5WCem/tODCjONXDyKg9wTaZyzwwhi7k6YLs3eJwn4eYdlrdLAYAyrT5FXQ==` |
+| `HOIDANIT_JWT_REFRESH_TOKEN_VALIDITY_IN_SECONDS` | 2592000                                                                                    |
+| `M2`                                             | /usr/local/apache-maven/bin                                                                |
+| `M2_HOME`                                        | /usr/local/apache-maven                                                                    |
+| `PORT`                                           | 8080                                                                                       |
+| `SPRING_DATASOURCE_PASSWORD`                     | Database access password (set by you when creating the database)                           |
+| `SPRING_DATASOURCE_URL`                          | JDBC URL of the database (e.g., `jdbc:mysql://<host>:<port>/<scheme>`)                     |
+| `SPRING_DATASOURCE_USERNAME`                     | Database username (e.g., `admin`)                                                          |
+| `SPRING_JPA_HIBERNATE_DDL_AUTO`                  | update                                                                                     |
 
 ![alt text](image-9.png)
 
