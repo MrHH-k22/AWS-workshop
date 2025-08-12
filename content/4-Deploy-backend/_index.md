@@ -19,9 +19,10 @@ In this section, we will deploy the Java Spring Boot backend application to **AW
 
 ### Content
 
-1. [**Create an S3 Bucket for Images**](4.1-Image-S3-bucket/) – Create and configure an S3 bucket for file uploads
-2. [**Set up Spring Boot App**](4.2-Setup-Springboot-app/) – Clone, build, and prepare the JAR file for deployment
-3. [**Configure IAM Role**](4.3-Configure-IAM-role/) – Create the required IAM roles for Elastic Beanstalk
-4. [**Deploy to AWS Beanstalk**](4.4-Create-beanstalk/) – Create and configure the Elastic Beanstalk environment
+1. [**Create an S3 Bucket for Images**](4.1-image-s3-bucket/) – Create and configure an S3 bucket for file uploads
+2. [**How to store S3 in backend**](4.2-review-s3-code/) - Review S3 code to store files in backend.
+3. [**Set up Spring Boot App**](4.2-setup-springboot-app/) – Clone, build, and prepare the JAR file for deployment
+4. [**Configure IAM Role**](4.3-configure-iam-role/) – Create the required IAM roles for Elastic Beanstalk
+5. [**Deploy to AWS Beanstalk**](4.4-create-beanstalk/) – Create and configure the Elastic Beanstalk environment
 
 ---

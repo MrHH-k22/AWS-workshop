@@ -18,8 +18,9 @@ In this section, we will design and deploy the database for the JobSeeker applic
 
 ### Contents
 
-1. [**Set Up Security Group for the Database**](3.1-Security-group/) – Create and configure a security group to control access to the database
-2. [**Create RDS Instance (MySQL)**](3.2-Create-rds/) – Deploy a MySQL database instance on Amazon RDS
-3. [**Connect to MySQL Workbench**](3.3-Connect/) – Establish the connection and create the application's schema
+1. [**Set Up Security Group for the Database**](3.1-security-group/) – Create and configure a security group to control access to the database
+2. [**Create RDS Instance (MySQL)**](3.2-create-rds/) – Deploy a MySQL database instance on Amazon RDS
+3. [**Connect to MySQL Workbench**](3.3-connect/) – Establish the connection and create the application's schema
+4. [**Set up AWS Backup service**](3.4-aws-backup/) - Set up aws backup to back up data
 
 ---

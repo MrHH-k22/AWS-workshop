@@ -19,9 +19,10 @@ Trong phần này, chúng ta sẽ triển khai ứng dụng backend Java Spring 
 
 ### Nội dung
 
-1. [**Tạo S3 Bucket cho hình ảnh**](4.1-Image-S3-bucket/) - Tạo và cấu hình S3 bucket để lưu trữ files upload
-2. [**Thiết lập Spring Boot app**](4.2-Setup-Springboot-app/) - Clone, build và chuẩn bị file JAR cho deployment
-3. [**Cấu hình IAM Role**](4.3-Configure-IAM-role/) - Tạo các IAM roles cần thiết cho Elastic Beanstalk
-4. [**Triển khai AWS Beanstalk**](4.4-Create-beanstalk/) - Tạo và cấu hình môi trường Elastic Beanstalk
+1. [**Tạo S3 Bucket cho hình ảnh**](4.1-image-s3-bucket/) - Tạo và cấu hình S3 bucket để lưu trữ files upload
+2. [**Cách lưu trữ S3 trong backend**](4.2-review-s3-code/) - Review code S3 lưu trữ file trong backend.
+3. [**Thiết lập Spring Boot app**](4.2-setup-springboot-app/) - Clone, build và chuẩn bị file JAR cho deployment
+4. [**Cấu hình IAM Role**](4.3-configure-iam-role/) - Tạo các IAM roles cần thiết cho Elastic Beanstalk
+5. [**Triển khai AWS Beanstalk**](4.4-create-beanstalk/) - Tạo và cấu hình môi trường Elastic Beanstalk
 
 ---

@@ -18,8 +18,9 @@ Trong phần này, chúng ta sẽ thiết kế và triển khai cơ sở dữ li
 
 ### Nội dung
 
-1. [**Thiết lập Security Group cho Database**](3.1-Security-group/) - Tạo và cấu hình security group để kiểm soát truy cập đến database
-2. [**Tạo Instance RDS (MySQL)**](3.2-Create-rds/) - Triển khai database MySQL trên Amazon RDS
-3. [**Kết nối tới MySQL Workbench**](3.3-Connect/) - Thiết lập kết nối và tạo schema cho ứng dụng
+1. [**Thiết lập Security Group cho Database**](3.1-security-group/) - Tạo và cấu hình security group để kiểm soát truy cập đến database
+2. [**Tạo Instance RDS (MySQL)**](3.2-create-rds/) - Triển khai database MySQL trên Amazon RDS
+3. [**Kết nối tới MySQL Workbench**](3.3-connect/) - Thiết lập kết nối và tạo schema cho ứng dụng
+4. [**Thiết lập dịch vụ AWS Backup**](3.4-aws-backup/) - Thiết lập aws backup để sao lưu dữ liệu
 
 ---
